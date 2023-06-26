@@ -1,0 +1,84 @@
+body {
+     background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    display: flex;
+    /*height: 100vh;*/
+    height: 1000px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+I want to build three boxes that are positioned in the
+middle of the page.
+To achieve this, I make the body the first flex-container.
+We need to set the hight to 100vh to occupy the whole page as
+flex body.
+To center the child container to the flex body parent.
+We use following proporties on the parent:
+justify-content: center; --> horizontally centering
+align-items: center --> vertically centering of child
+
+Now we create a box with an overall margin of 10px that will give
+us a margin to the container and also a margin between the boxes.
+given we will create 3 of them.
+
+The container we will prepare for the three boxes. Will have
+the attribute justfy-content: space-between;
+This will space the boxes evenly within the container.
+The container will have tha attribute display:flex;
+Preparing it to place the boxes (his children) properly.
+
+Furthermore the boxes will also have the attribute display: flex;
+That will allow us to properly handle the Text in the boxes.
+We prepare for the children of the box (button and header) to be placed
+vertically in the box. We use flex-direction: column;
+
+
+*/
+
+
+button {
+    display: block;
+    margin: 20px;
+    border: solid gray 1px;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.boxes {
+    width: 150px;
+    height: 200px;
+    background: linear-gradient(to bottom, #6dd5ed, #2193b0);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    border: solid black;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+.box-header{
+    margin-top: 10px;
+}
+.box-buttom{
+    margin-bottom: 10px;
+}
+
+.box-3{
+    background: linear-gradient(to bottom, #6dd5ed, #2193b0);
+
+}

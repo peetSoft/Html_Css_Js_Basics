@@ -3,11 +3,16 @@ body {
     background: fixed linear-gradient(#243d4f, #426f8f);
 }
 
+div.differ{
+    color:black;
+}
 .box-outer {
+
+    box-sizing: border-box;
     position: absolute;
     border-radius: 10px;
-    width: 300px;
-    height: 150px;
+    width: 326px;
+    height: 289px;
     top: 0;
     left: 0;
     bottom: 0;
@@ -16,13 +21,11 @@ body {
 }
 
 
-/* Box-Size =  Content size -( box_amount + 1 x margin size)*/
 .box-inner{
     position: absolute;
     box-sizing: border-box;
-    padding-top: 10px;
-    width: 250px;
-    height: 100px;
+    width: 280px;
+    height: 228px;
     top: 0;
     left: 0;
     bottom: 0;
@@ -30,26 +33,24 @@ body {
     margin: auto;
 }
 
-.box-inner2{
-/*    die parent box is 250x100
-Dann wähle ich für diese Box*/
-    position: absolute;
-    background-color: gray ;
-    width: 210px;
-    height: 40px;
-    /*top: 0;*/
-    left: 0;
-    /*bottom: 0;*/
-    right: 0;
-    margin: auto;
+.box-content-holder{
+    height: 37px;
+    width: 280px;
+    background-color: lightgray;
 
 }
 
 .border-box{
-    border: solid 3px gray;
+    border: solid 3px lightgray;
 }
 
-/* Die box soll in der anderen Stecken 250x100
-Außenabstände werden wir durch margin erreichen?
-Sie ist absolut zu der hoffentlich anderen positioniert.
-Dass soll erstmal sichtbar gemacht werden mit einem Rahmen*/
+.box-content-margin{
+    margin-bottom: 2px;
+}
+.box-content-text{
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: lightgray;
+}
+

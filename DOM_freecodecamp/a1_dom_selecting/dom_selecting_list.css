@@ -37,10 +37,6 @@ li {
     font-weight: bold;
 }
 
-span {
-    white-space: normal;
-}
-
 .container {
     border: solid 2px rebeccapurple;
     border-radius: 7px;
@@ -53,8 +49,4 @@ span {
     right: 0;
     margin: auto;
 
-}
-
-.fancy-class{
-    background-color: green;
 }
